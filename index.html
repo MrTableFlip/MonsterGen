@@ -20,17 +20,58 @@
             </div>
         </div>
         <div class="container">
-            <h1>Click the Button and find your Prey</h1>
-            <hr>
-            <div class="col text-right">
-                <button id="submitBtn" onclick="GenerateMonster()" type="button" class="btn btn-dark btn-block">Who will
-                    it Be</button>
+            <div class="row">
+                <h3>Discover your Prey and the instrument with which you will fight</h3>
+                <hr>
+                <div class="col-4 text-left">
+                    <h5>Your opponent will be:</h5>
+                    <button id="submitBtn" onclick="GenerateMonster()" type="button" class="btn btn-dark btn-block">Who
+                        will
+                        it Be</button>
+                </div>
+                <div class="col-8 text-right">
+                    <h4 id="chosenOne">Monster Name Here</h4>
+                </div>
             </div>
             <hr>
-            <container id="MonsterSource">
-                <img id="monsterImage">
-                <h4 id="chosenOne">Monster Name Here</h4>
-            </container>
+            <div class="row">
+                <div class="col">
+                    <!-- <input type="checkbox" id="repeatWeapons">
+                    <label for="repeatWeapons">Prevent Repeat Weapons?</label> -->
+                </div>
+            </div>
+            <br>
+            <div class="row">
+                <div class="col-6 text-left">
+                    <h5>Party Leader: <h5 id="playerOne"></h5>
+                    </h5>
+                    <button id="submitBtn" onclick="WeaponPicker(0)" type="button" class="btn btn-dark btn-block">Click
+                        here
+                        for your Weapon</button>
+                </div>
+                <div class="col-6 text-left">
+                    <h5>Party Member Two: <h5 id="playerTwo"></h5>
+                    </h5>
+                    <button id="submitBtn" onclick="WeaponPicker(1)" type="button" class="btn btn-dark btn-block">Click
+                        for
+                        your Weapon</button>
+                </div>
+                <div class="col-6 text-left">
+                    <h5>Party Member Three: <h5 id="playerThree"></h5>
+                    </h5>
+                    <button id="submitBtn" onclick="WeaponPicker(2)" type="button" class="btn btn-dark btn-block">Click
+                        for
+                        your Weapon</button>
+                </div>
+                <div class="col-6 text-left">
+                    <h5>Party Member Four: <h5 id="playerFour"></h5>
+                    </h5>
+                    <button id="submitBtn" onclick="WeaponPicker(3)" type="button" class="btn btn-dark btn-block">Click
+                        for
+                        your Weapon</button>
+                </div>
+                <hr>
+            </div>
         </div>
     </main>
     <!-- Optional JavaScript -->
