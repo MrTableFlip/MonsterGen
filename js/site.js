@@ -13,7 +13,7 @@ let weapons = ["", "", "", ""];
 let players = ["playerOne", "playerTwo", "playerThree", "playerFour"];
 
 function GenerateMonster() {
-    let index = GetRandomInt(1, (MonsterList.length + 1));
+    let index = GetRandomInt(0, MonsterList.length);
 
     document.getElementById("chosenOne").textContent = MonsterList[index];
     return MonsterList[index];
@@ -22,7 +22,7 @@ function GenerateMonster() {
 function WeaponPicker(player) {
     //let weaponOne = document.getElementById("playerOne").textContent;
 
-    let index = GetRandomInt(1, (WeaponsList.length + 1));
+    let index = GetRandomInt(0, WeaponsList.length);
     weapons[player] = WeaponsList[index];
     let mem = players[player];
 
